@@ -378,11 +378,11 @@ padding: 6px 22px;
   padding: 0;
   list-style: none;
   align-content: center;
-  
+  min-width: 370px;
   
 }
 .portfolio-list-item {
-flex-basis: calc(100% / 3 - 30px);
+
 align-items: center;
 margin-right: 30px;
 }
