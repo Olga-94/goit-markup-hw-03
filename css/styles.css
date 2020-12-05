@@ -8,6 +8,11 @@
     margin: 0;
   }
 }
+
+html {
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -30,12 +35,17 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  
+  
+  
 }
 body {
   font-family: var(--main-font);
@@ -64,10 +74,13 @@ body {
 }
 .header-address {
   display: flex;
-  margin-right: 50px;
+  margin-right: 0px;
 }
 .header-mail {
   margin-right: 50px;
+}
+.header-tel {
+  margin-right: 0px;
 }
 .nav-list-item:not(:last-child) {
   margin-right: 52px;
@@ -168,11 +181,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  
 }
 .features-list .features-list-item-name {
   margin-bottom: 10px;
   margin-top: 0px;
-  min-width: 270px;
+  max-width: 270px;
 }
 
 .features-description {
@@ -303,13 +317,16 @@ body {
 /*===========END FOOTER=========*/
 
 /*================== PORTFOLIO==========*/
-.header .portfolio {
-  border: 1px;
+.header {
+ border-bottom: 1px solid #ECECEC;
 }
+
 
 .buttons-list {
   display: flex;
-  justify-content: center;
+   justify-content: center;
+   padding-bottom: 20px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .portfolio-buttons-list-point:not(:last-child) {
 margin-right: 8px;  
@@ -326,8 +343,10 @@ margin-right: 8px;
   color: #212121;
   text-decoration: none;
   background-color: #f5f4fa;
-  border-radius: 4px ;
+  border-radius: 4px;
+  border: 0px;
   min-width: 73px;
+padding: 6px 22px;
 }
 
 .portfolio-list-type {
@@ -336,6 +355,7 @@ margin-right: 8px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  padding-bottom: 4px;
 }
 .portfolio-list-desc {
   font-weight: 400;
@@ -345,8 +365,32 @@ margin-right: 8px;
   color: #757575;
 }
 
-.portfolio-buttons-list {
-  display: flex;
-  align-items: center;
+.portfolio-buttons {
+  margin-top: 94px;
+  margin-bottom: 34px;
 }
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-top: -8px;
+  padding: 0;
+  list-style: none;
+  align-content: center;
+  
+  
+}
+.portfolio-list-item {
+flex-basis: calc(100% / 3 - 30px);
+align-items: center;
+margin-right: 30px;
+}
+.card-description {
+  padding: 20px 20px;
+  min-width: 322px;
+}
+
+
+  
 /*================== END PORTFOLIO==========*/
