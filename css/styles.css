@@ -246,9 +246,9 @@ color: #ffffff;}
 }*/
 .our-team {
   background-color: #f5f4fa;
-}
-.our-team .title {
   padding-top: 94px;
+}
+
 }
 .our-team-list-item {
   width: 270px;
@@ -370,8 +370,8 @@ padding: 6px 22px;
 }
 
 .portfolio-buttons {
-  margin-top: 94px;
-  margin-bottom: 34px;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
 
 .card-set {
